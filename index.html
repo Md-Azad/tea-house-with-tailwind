@@ -34,10 +34,18 @@
               clifford: "#da373d",
               darkBlack: "#1C1C1C",
               gray3: "#777777",
+              grad2: "rgba(87, 118, 57, 0.1)",
+              grad3: "rgba(230, 166, 35, 0.1)",
             },
             backgroundImage: {
               btnGradient:
                 "linear-gradient(270.00deg, rgb(255, 0, 0) 0%,rgb(255, 137, 56) 100%)",
+              cardGradient:
+                "linear-gradient(180.00deg, rgb(244, 244, 244),rgba(244, 244, 244, 0) 100%)",
+              grad1:
+                "linear-gradient(270.00deg, rgb(255, 0, 0) 0%,rgb(255, 137, 56) 100%)",
+              grad4:
+                "linear-gradient(90.00deg, rgb(217, 217, 217),rgba(255, 255, 255, 0) 100%)",
             },
             fontFamily: {
               manrope: ["Manrope", " sans-serif"],
@@ -81,20 +89,94 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="w-10/12 mx-auto">
       <!-- Featured Products section starts here -->
-      <div class="text-center">
-        <h1 class="text-drakBlack text-[2.8rem] font-bold">
-          Our Featured Products
-        </h1>
-        <p class="text-gray3">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some <br />
-          form, by injected humour, or randomised words which don't look even
-          slightly believable.
-        </p>
+      <div>
+        <div class="text-center">
+          <h1 class="text-drakBlack text-[2.8rem] font-bold">
+            Our Featured Products
+          </h1>
+          <p class="text-gray3">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some <br />
+            form, by injected humour, or randomised words which don't look even
+            slightly believable.
+          </p>
+        </div>
+
+        <!-- cards -->
+        <div class="mt-6 mb-10 flex gap-6">
+          <div
+            class="flex flex-col justify-center items-center space-y-2 bg-cardGradient px-16 py-8 rounded-t-md"
+          >
+            <img src="./images/tea-1.png" alt="" />
+            <h3 class="darkBlack text-2xl font-bold">Milk Tea</h3>
+            <p class="text-center text-gray3">
+              Creamer could be replaced by fresh milk
+            </p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center space-y-2 bg-cardGradient px-16 py-8 rounded-t-md"
+          >
+            <img src="./images/tea-2.png" alt="" />
+            <h3 class="darkBlack text-2xl font-bold">Black Tea</h3>
+            <p class="text-center text-gray3">
+              Creamer could be replaced by fresh milk
+            </p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center space-y-2 bg-cardGradient px-16 py-8 rounded-t-md"
+          >
+            <img src="./images/tea-3.png" alt="" />
+            <h3 class="darkBlack text-2xl font-bold">Lemon Tea</h3>
+            <p class="text-center text-gray3">
+              Creamer could be replaced by fresh milk
+            </p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center space-y-2 bg-cardGradient px-16 py-8 rounded-t-md"
+          >
+            <img src="./images/tea-4.png" alt="" />
+            <h3 class="darkBlack text-2xl font-bold">Green Tea</h3>
+            <p class="text-center text-gray3">
+              Creamer could be replaced by fresh milk
+            </p>
+          </div>
+        </div>
       </div>
+
       <!-- Featured Products section ends here -->
+
+      <!-- Great tea section starts here -->
+      <div class="my-6 flex justify-between gap-6">
+        <div class="w-1/2 border grid grid-cols-2 grid-flow-row gap-6">
+          <div class="bg-grad1 h-36 h- opacity-10 rounded-md"></div>
+          <div class="bg-grad3 rounded-md row-span-3"><h1>2nd</h1></div>
+          <div class="bg-grad2 rounded-md row-span-3"><h1>3rd</h1></div>
+          <div class="bg-grad4 rounded-md"></div>
+        </div>
+        <div class="space-y-4 w-6/12">
+          <h1>Great Tea, Freshly Presented</h1>
+          <p>
+            The meaning of gong cha is chanese is to provide the best tea to
+            emperor from all possessions . It represents the highest quality and
+            self expectation. Establishing in 2006, Gong cha had been deeply
+            appreciated by its custoers because of good words of mouth and
+            unique customized service orginated from Taiwan.
+          </p>
+          <h3>Unique Taste</h3>
+          <p>
+            A Unique and different style from other teapots gives a luxurious
+            and minimalist impression
+          </p>
+          <h3>Premium Quality</h3>
+          <p>
+            Premium Quality that makes tea more elegant and more durable when
+            you use it.
+          </p>
+        </div>
+      </div>
+      <!-- Great tea section ends here -->
     </main>
   </body>
 </html>
